@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Victor Felipe Jr" />
+    <meta name="description" content="Intro to Webdev: Learning HTML" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <title>CDS113 Victor Felipe</title>
+  </head>
+
+  <body>
+    <div class="width-wrap">
+      <header id="top">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/links.html">Links</a></li>
+            <li><a href="/glossary.html">Glossary</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Survey</h1>
+        <form action="https://formspree.io/f/mnqkowpa" method="POST">
+          <p>
+            <label for="name"
+              >What is your name?<abbr title="required" aria-label="required">
+                *
+              </abbr></label
+            ><input type="text" name="name_field" id="name" required />
+          </p>
+          <p>
+            <label for="email"
+              >What is your email?<abbr title="required" aria-label="required">
+                *
+              </abbr></label
+            ><input type="email" name="email_field" id="email" required />
+          </p>
+          <p>
+            <label for="whole_number">Which whole number is best? </label
+            ><input
+              type="number"
+              min="1"
+              name="best_whole_number"
+              id="whole_number"
+              required
+            />
+          </p>
+          <p>
+            <label for="day">Which day is best? </label
+            ><input type="date" name="best_day" id="day" />
+          </p>
+          <p>
+            <label for="bear"
+              >Which bear is best?<abbr title="required" aria-label="required">
+                *
+              </abbr></label
+            >
+            <select name="best_bear" id="bear" required>
+              <option value="" selected>&nbsp;</option>
+              <option value="Black">Black</option>
+              <option value="Brown">Brown</option>
+              <option value="Care">Care</option>
+              <option value="Panda">Panda</option>
+              <option value="Polar">Polar</option>
+              <option value="Teddy">Teddy</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Do you like radio buttons?</legend>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="radio_button"
+                  id="radio_yes"
+                  value="Yes"
+                /><label for="radio_yes">Yes</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="radio_button"
+                  id="radio_no"
+                  value="No"
+                /><label for="radio_no">No</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="radio_button"
+                  id="radio_nanya"
+                  value="None of your Business"
+                  checked
+                /><label for="radio_nanya">None of your business</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label for="life_meaning">What is the meaning of life? </label
+            ><textarea
+              name="life_meaning"
+              id="life_meaning"
+              cols="30"
+              rows="5"
+              placeholder="Enter the correct answer here"
+            ></textarea>
+          </p>
+          <button type="submit">Send</button>
+        </form>
+      </main>
+      <footer>
+        <hr />
+        <blockquote>
+          "Keep Moving Forward"<br />
+          <cite>— <span class="author">Walt Disney</span> </cite>
+        </blockquote>
+        <p>
+          © 2023
+          <a
+            href="mailto:23023987@saultcollege.ca?subject=Message%20from%20CSD112%20Website"
+          >
+            Victor Felipe Jr</a
+          >
+        </p>
+
+        <picture>
+          <source type="image/svg+xml" srcset="images/sc-logo.svg" />
+          <img
+            src="images/sc-logo.png"
+            width="70"
+            srcset="
+              images/sc-logo.png,
+              images/sc-logo_105.png 1.5x,
+              images/sc-logo_140.png 2x
+            "
+            alt="Sault-College logo"
+          />
+        </picture>
+        <!-- THIS PART OF THE LAB USE DIFFERENT STYLING -->
+      </footer>
+      <a href="#top" title="Back To Top">◤</a>
+    </div>
+  </body>
+</html>

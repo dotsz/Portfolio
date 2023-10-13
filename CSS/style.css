@@ -1,10 +1,13 @@
   html{
-  background-color: #191527;
+  background-image: url(/images/_6c4c93c1-99ab-487e-8710-8cbd73753a20.jpeg);
+  background-attachment: fixed;
+  size:cover;
   color:white;
   }
   
  a {
   text-decoration: none;
+  color:whitesmoke;
  }
  .profile_photo {
   border-radius: 80%;

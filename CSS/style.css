@@ -1,4 +1,4 @@
-  html{
+ html{
   background-image: url(../images/background_sample.jpg);
   background-attachment: fixed;
   size:cover;
@@ -6,12 +6,16 @@
   margin: 1em;
   padding: 1em;
   scroll-behavior: smooth;
-  }
+  } 
+
   main {
     background-image: url(../images/_6c4c93c1-99ab-487e-8710-8cbd73753a20.jpeg);
     margin: 1em;
     padding: 1em;
     background-attachment: fixed;
+  }
+  .width-wrap {
+    margin: 0 auto;
   }
   footer {
     padding: 1em;
@@ -20,25 +24,23 @@
     
   }
   
-  
-  
  a {
   text-decoration: none;
   color:whitesmoke;
  }
  .profile_photo {
-  border-radius: 80%;
+  border-radius: 50%;
  }
   .small-image {
-    max-width: 50%; 
-    height: auto; 
+    max-width: 40%; 
   }
 
+  
   nav {
     display: flex;
-    justify-content: center;
-  }
+    justify-content: flex-start;
 
+  }
   nav ul {
     list-style: none;
     display: flex;
@@ -53,30 +55,6 @@
   nav a {
     text-decoration: none;
     color:whitesmoke;
-  }
-  
-  .content {
-    display:flex;
-    justify-content: space-evenly;
-    margin: 10px;
-    padding: 10px;
-  }
-  .content .left-content, .right-content{
-    border-radius: 25px;
-    background-color: #20043e;
-    max-width: 45%;
-    border: #450736 solid;
-    margin:10px;
-    padding: 10px;
-   
-  }
-
-
-  .center-content {
-    text-align: center;
-    padding: 0 auto; 
-    margin: 0 auto;
-  
   }
   
 

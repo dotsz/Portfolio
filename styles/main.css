@@ -2,6 +2,7 @@
   box-sizing: border-box;
   color: bisque;
 }
+
 figure a img {
   width: 50%;
 }
@@ -89,6 +90,7 @@ footer hr {
 body {
   background-color: #262626;
 }
+
 body dl dt::after {
   content: ":";
 }
@@ -100,7 +102,9 @@ th {
   padding: 0.3em 1em;
 }
 
-thead, tfoot, tbody th {
+thead,
+tfoot,
+tbody th {
   background-color: rgba(255, 255, 255, 0.2)
 }
 
@@ -110,7 +114,7 @@ td {
 
 tr:nth-child(even) td {
   background-color: rgba(255, 255, 255, 0.15);
-} 
+}
 
 /* Form Styling */
 
@@ -118,8 +122,8 @@ label {
   display: block;
 }
 
-input[type="radio"] + label,
-input[type="checkbox"] + label {
+input[type="radio"]+label,
+input[type="checkbox"]+label {
   display: inline;
 }
 

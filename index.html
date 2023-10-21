@@ -1,232 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Victor Felipe Jr" />
+    <meta name="description" content="Intro to Webdev: Learning HTML" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Victor Felipe Jr" />
-  <meta name="description" content="Intro to Webdev: Learning HTML" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta http-equiv='cache-control' content='no-cache'> 
-  <meta http-equiv='expires' content='0'> 
-  <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 
-  <link rel="stylesheet" href="CSS/style.css" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <title>CDS113 Victor Felipe</title>
+  </head>
+  <body>
+    <div class="width-wrap">
+      <header id="top">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/links.html">Links</a></li>
+            <li><a href="/glossary.html">Glossary</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Welcome to Victor's Website</h1>
+        <h1>
+          <a href="images/image_of_myself.jpg">
+            <img
+              src="images/image_of_myself_300px.jpg"
+              alt="image_of_myself"
+              sizes="(max-width:500px) 150px, 300px"
+              srcset="
+                images/image_of_myself_150px.jpg 150w,
+                images/image_of_myself_300px.jpg 300w
+              "
+            />
+            <!-- BEAUTIFUL, EVEN THE FORMAT! GREAT JOB -->
+          </a>
+        </h1>
+        <p>Hi, I'm Victor</p>
+        <p>I am currently learning HTML</p>
+        <!--"You Found Me!"-->
 
-  <title>My Portfolio / MiniProject</title>
-</head>
+        <table>
+          <caption>
+            Table 1. Current Courses
+          </caption>
+          <thead>
+            <tr>
+              <th rowspan="2" scope="row">Term</th>
+              <th colspan="3" scope="colgroup">Course</th>
+            </tr>
+            <tr>
+              <th scope="col">Code</th>
+              <th scope="col">Name</th>
+              <th scope="col">Hrs/Week</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="6" scope="rowgroup">Fall</th>
+              <td>CMM115</td>
+              <td>Communications 1</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>CSD110</td>
+              <td>Introduction to Programming</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSD112</td>
+              <td>Introduction to Web Development</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSD113</td>
+              <td>Computing Environments and Tools</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>MTH123</td>
+              <td>Computer Mathematics</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>TNY130</td>
+              <td>Technology in Society</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th rowspan="5" scope="rowgroup">Winter</th>
+              <td>CSA103</td>
+              <td>Business Applications 1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSD121</td>
+              <td>Programming Concepts 1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSD122</td>
+              <td>Hardware, OS, and Networks</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>CSD123</td>
+              <td>Databases 1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSD124</td>
+              <td>Systems Analysis and Design</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3" scope="row">Total</th>
+              <td>41</td>
+            </tr>
+          </tfoot>
+        </table>
 
-<body>
-  <div class="width-wrap">
-    <header id="top">
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="links.html">Links</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-        </ul>
-      </nav>
-    
-    </header>
-    <main>
-      
-                <div class="my_photo">
-                  <h1>
-                    <a href="images/image_of_myself.jpg">
-                      <img class='profile_photo' src="images/image_of_myself_300px.jpg" alt="image_of_myself" sizes="(max-width:500px) 150px, 300px"
-                        srcset="
-                              images/image_of_myself_150px.jpg 150w,
-                              images/image_of_myself_300px.jpg 300w
-                            " />
-                    </a>
-                  </h1>
-                </div>
-                
+        <h2>My Favorite Things</h2>
+        <figure>
+          <a href="https://en.bandainamcoent.eu/elden-ring/elden-ring"
+            ><img src="images/git_gud.jpg" alt="Elden Ring"
+          /></a>
+        </figure>
+        <h3>My Favorite Games</h3>
+        <ol>
+          <li>Bloodborne</li>
+          <li>Elden Ring</li>
+          <li>Red Dead Redemption 2</li>
+        </ol>
+        <h3>Haiku</h3>
+        <p>Rest at the grace site</p>
+        <p>Important message ahead,</p>
+        <p>Try finger, But hole.</p>
 
-                <div class="about_me">
-                    <p>Hi, I'm Victor <br> Learning in progress</p>
-                    <ul>
-                      <li>Python</li>
-                      <li>HTML & CSS</li>
-                      <li>Git</li>
-                    </ul>
-                </div>
-                    
+        <p>
+          by
+          <cite>
+            <a
+              href="https://www.reddit.com/r/Eldenring/comments/tddj3g/elden_ring_haiku/"
+            >
+              <span class="author">u/TheMostModestMouse</span>
+            </a>
+          </cite>
+        </p>
 
-                  
-                    <table class="my_current_course">
-                      <caption>
-                        Table 1. Current Courses
-                      </caption>
-                      <thead>
-                        <tr>
-                          <th rowspan="2" scope="row">Term</th>
-                          <th colspan="3" scope="colgroup">Course</th>
-                        </tr>
-                        <tr>
-                          <th scope="col">Code</th>
-                          <th scope="col">Name</th>
-                          <th scope="col">Hrs/Week</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th rowspan="6" scope="rowgroup">Fall</th>
-                          <td>CMM115</td>
-                          <td>Communications 1</td>
-                          <td>3</td>
-                        </tr>
-                        <tr>
-                          <td>CSD110</td>
-                          <td>Introduction to Programming</td>
-                          <td>4</td>
-                        </tr>
-                        <tr>
-                          <td>CSD112</td>
-                          <td>Introduction to Web Development</td>
-                          <td>4</td>
-                        </tr>
-                        <tr>
-                          <td>CSD113</td>
-                          <td>Computing Environments and Tools</td>
-                          <td>4</td>
-                        </tr>
-                        <tr>
-                          <td>MTH123</td>
-                          <td>Computer Mathematics</td>
-                          <td>3</td>
-                        </tr>
-                        <tr>
-                          <td>TNY130</td>
-                          <td>Technology in Society</td>
-                          <td>3</td>
-                        </tr>
-                        <tr>
-                          <th rowspan="5" scope="rowgroup">Winter</th>
-                          <td>CSA103</td>
-                          <td>Business Applications 1</td>
-                          <td>4</td>
-                        </tr>
-                        <tr>
-                          <td>CSD121</td>
-                          <td>Programming Concepts 1</td>
-                          <td>4</td>
-                        </tr>
-                        <tr>
-                          <td>CSD122</td>
-                          <td>Hardware, OS, and Networks</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td>CSD123</td>
-                          <td>Databases 1</td>
-                          <td>4</td>
-                        </tr>
-                        <tr>
-                          <td>CSD124</td>
-                          <td>Systems Analysis and Design</td>
-                          <td>3</td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <th colspan="3" scope="row">Total</th>
-                          <td>41</td>
-                        </tr>
-                      </tfoot>
-                    </table>
-                  
-                
-  
-            
-              
-                <h2>My Favorite Things</h2>
-                <figure>
-                  <a href="https://en.bandainamcoent.eu/elden-ring/elden-ring"><img class="small-image" src="images/git_gud.jpg"
-                      alt="EldenRing" /></a>
-                </figure>
-              
-              
-                <h3>My Favorite Games</h3>
-                <ol>
-                  <li>Bloodborne</li>
-                  <li>Elden Ring</li>
-                  <li>Red Dead Redemption 2</li>
-                </ol>
-              
-            
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source
+            src="https://ia801608.us.archive.org/25/items/mastermindofmars_2304_librivox/mastermindofmars_00_burroughs_64kb.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <p>
+          If your browser does not support audio playback, you can
+          <a
+            href="https://www.archive.org/download/mastermindofmars_2304_librivox/mastermindofmars_2304_librivox_64kb_mp3.zip"
+            download
+            >download the recording</a
+          >.
+        </p>
+        <h3>YouTube Video</h3>
+        <iframe
+          width="400"
+          height="300"
+          src="https://www.youtube.com/embed/eVYtadabJ6I?si=0FMXzHeACwqtIFpy"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </main>
+      <footer>
+        <hr />
+        <blockquote>
+          "Keep Moving Forward"<br />
+          <cite>— <span class="author">Walt Disney</span> </cite>
+        </blockquote>
+        <p>
+          © 2023
+          <a
+            href="mailto:23023987@saultcollege.ca?subject=Message%20from%20CSD112%20Website"
+          >
+            Victor Felipe Jr</a
+          >
+        </p>
 
-           
-              
-              <h3>Haiku</h3>
-              <p>Rest at the grace site</p>
-              <p>Important message ahead,</p>
-              <p>Try finger, But hole.</p>
-
-              <p>
-                by
-                <cite>
-                  <a href="https://www.reddit.com/r/Eldenring/comments/tddj3g/elden_ring_haiku/">
-                    <span class="author">u/TheMostModestMouse</span>
-                  </a>
-                </cite>
-              </p>
-           
-  
-  
-    <h3>Public Domain Audiobook</h3>
-    <audio controls>
-      <source
-        src="https://ia801608.us.archive.org/25/items/mastermindofmars_2304_librivox/mastermindofmars_00_burroughs_64kb.mp3"
-        type="audio/mpeg" />
-    </audio>
-    <p>
-      If your browser does not support audio playback, you can
-      <a href="https://www.archive.org/download/mastermindofmars_2304_librivox/mastermindofmars_2304_librivox_64kb_mp3.zip"
-        download>download the recording</a>.
-    </p>
-  
-  
-    <h3>YouTube Video</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eVYtadabJ6I?si=0FMXzHeACwqtIFpy"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  
-  </div>
-  </main>
-  <hr />
-  <footer class="center-content">
-    
-    <blockquote>
-      "Keep Moving Forward"<br />
-      <cite>— <span class="author">Walt Disney</span> </cite>
-    </blockquote>
-    <p>
-      © 2023
-      <a href="mailto:23023987@saultcollege.ca?subject=Message%20from%20CSD112%20Website">
-        Victor Felipe Jr</a>
-    </p>
-
-    <picture>
-      <source type="image/svg+xml" srcset="images/sc-logo.svg" />
-      <img src="images/sc-logo.png" width="70" srcset="
+        <picture>
+          <source type="image/svg+xml" srcset="images/sc-logo.svg" />
+          <img
+            src="images/sc-logo.png"
+            width="70"
+            srcset="
               images/sc-logo.png,
               images/sc-logo_105.png 1.5x,
               images/sc-logo_140.png 2x
-            " alt="Sault-College logo" />
-    </picture>
-  </footer>
-  <a href="#top" class="back-to-top" title="Back To Top">◤</a>
-  
-
-</body>
-
+            "
+            alt="Sault-College logo"
+          />
+        </picture>
+      </footer>
+      <a href="#top" title="Back To Top">◤</a>
+    </div>
+  </body>
 </html>

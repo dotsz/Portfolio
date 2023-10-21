@@ -94,22 +94,23 @@ body dl dt::after {
 }
 
 /* Table Styling */
+
 table td,
 th {
   padding: 0.3em 1em;
 }
 
-tbody thead tfoot,
-th {
-  background-color: rgba(255, 255, 255, 0.2);
+thead, tfoot, tbody th {
+  background-color: rgba(255, 255, 255, 0.2)
 }
 
 td {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
 tr:nth-child(even) td {
   background-color: rgba(255, 255, 255, 0.15);
-}
+} 
 
 /* Form Styling */
 

@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
   color: bisque;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
+
+
 
 figure a img {
   width: 50%;
@@ -71,6 +75,7 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3em;
+  margin-top: 3em;
   padding: 0 2em 2em;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-top: none;

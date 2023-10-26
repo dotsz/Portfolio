@@ -15,15 +15,60 @@ img {
   width: auto;
 }
 
-nav ul, a, main ul li{
+.mobile-nav {
+  display:none;
+  position: absolute;
+  top: 1.5em;
+  right: 4em;
+  
+}
+
+nav ul, a, main ul li, .mobile-nav ul, .mobile-nav li{
   list-style-type: none;
   text-decoration: none;
 }
 
 header {
   display:flex;
-  justify-content: space-between;
-  padding: 0 2em;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+.nav-toggle, .nav-toggle-label {
+  display:none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+
+}
+.nav-toggle-label span, 
+.nav-toggle-label:before, 
+.nav-toggle-label:after{
+  display:block;
+  background: #c5a363;
+  height: 4px;
+  width: 2em;
+  border-radius: 2px;
+  position:relative;
+}
+.nav-toggle-label:before, 
+.nav-toggle-label:after {
+content:'';
+position: absolute;
+}
+.nav-toggle-label:before{
+  bottom: 5px;
+}
+.nav-toggle-label:after{
+  top: 5px;
+}
+
+.nav-toggle:checked ~ .mobile-nav{
+  display: block;
 }
 
 nav a::after{
@@ -99,10 +144,24 @@ dd {
 
 
 
-@media screen and (max-width:400px){
- 
+
+@media screen and (max-width:414px){
+  
+  .nav-toggle-label {
+    display:block;
+    
+  }
+
+  nav {
+    display:none;
+    padding: 0 2em;
+  }
+  .width-wrap{
+    margin: 5px;
+  }
+
   .logo {
-    width: 50px;
+    display:none;
   }
   img {
     width: 100%;
@@ -113,5 +172,6 @@ dd {
   }
   .container {
     display:block;
+    padding: 1em;
   }
 }

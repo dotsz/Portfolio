@@ -280,4 +280,12 @@ input:invalid {
   transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
+.social-media-icon {
+  position:fixed;
+  bottom: 10px;
+  right: 6.5em;
+}
 
+.social-media-icon a img {
+  width: 1.5em;
+}

@@ -6,13 +6,17 @@
   background-color:black;
   font-family: 'Montserrat', sans-serif;
 }
+html, body {
+  max-width: 100%;
+  overflow-x:hidden;
+}
 
 .width-wrap {
   max-width: 800px;
   margin: 2em auto; 
 }
 img {
-  width: auto;
+  max-width: 800px;
   padding: 0 1em;
 }
 p{
@@ -196,7 +200,7 @@ input:invalid {
 
 /* Media Queries */
 
-@media screen and (max-width:414px){
+@media screen and (max-width:430px){
   
   .nav-toggle-label {
     display:block;
@@ -213,7 +217,8 @@ input:invalid {
     display:none;
   }
   img {
-    width: 250px;
+    max-width: 350px;
+    height: 350px;
     padding: 0 1em;
     margin: 0 auto;
   }

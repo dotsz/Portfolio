@@ -230,19 +230,18 @@ input:invalid {
     display:none;
     padding: 0 2em;
   }
+  main h1 a img {
+    margin: 0 1em;
+    max-width: 350px;
+  }
   .width-wrap{
     margin: 5px;
   }
 
-  .logo {
+  footer a .logo {
     display:none;
   }
-  img {
-    max-width: 350px;
-    height: 350px;
-    padding: 0 1em;
-    margin: 0 auto;
-  }
+ 
   body {
     overflow-x: hidden;
   }
@@ -250,6 +249,7 @@ input:invalid {
     display:block;
     padding:1em;
   }
+  
 }
 
 .feedback-button {
@@ -260,8 +260,10 @@ input:invalid {
 }
 .feedback-form {
   position:fixed;
-  top: 30%;
-  right: 5em;
+  padding: 1em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(0,0,0,0.7);
 }
 .feedback-form label, input, textarea {
@@ -271,21 +273,27 @@ input:invalid {
 /* Initial State - Hidden */
 .feedback-popup {
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
+  visibility: hidden;
+  pointer-events: none; 
+  transition: opacity 0.5s ease, visibility 0.5s;
+  position: fixed; 
 }
 
 /* Class to Show the Popup */
 .visible {
   opacity: 1;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
-}
+  visibility: visible;
+  pointer-events: auto; 
+ }
 
 .social-media-icon {
   position:fixed;
-  bottom: 10px;
-  right: 6.5em;
+  bottom: 2em;
+  right: 1em;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .social-media-icon a img {
-  width: 1.5em;
+  min-width: 20px;
+  max-height: 25px;
 }

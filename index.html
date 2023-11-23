@@ -21,9 +21,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png" />
   <link rel="manifest" href="images/icons/site.webmanifest" />
   <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5" />
-
-  <!-- <script src="js/script.js"></script> -->
-
   <title>My Website</title>
 </head>
 
@@ -89,17 +86,32 @@
       <cite>— <span class="author">Walt Disney</span> </cite>
     </blockquote>
     <footer>
+      <div>
       <picture>
-        <a href="index.html"><img class="logo" src="images/my_channels_profile.jpg" />
-      </picture></a>
+        <a href="index.html"><img class="logo" src="images/my_channels_profile.jpg" /></a>
+      </picture>
+      </div>
+      <div>
       <p class="copyright">
         © 2023 <a href="mailto:23023987@saultcollege.ca?subject=Message%20from%20CSD112%20Website"> Victor Felipe Jr</a>
       </p>
+    </div>
     </footer>
 
     <a href="#top" title="Back To Top" class="back-to-top">◤</a>
-
   </div>
+
+  <button id="feedbackBtn" class="feedback-button">Feedback</button>
+  <div id="feedbackPopup" class="feedback-popup">
+    <form id="myFeedbackForm" action="https://formspree.io/f/mnqkowpa" method="POST" class="feedback-form" data-ajax>
+        <label>Email: <input type="email" name="email">
+        </label>
+        <label>Feedback:</label>
+        <textarea name="message" cols="20" rows="8"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>

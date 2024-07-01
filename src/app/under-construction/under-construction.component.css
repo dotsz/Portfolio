@@ -1,0 +1,12 @@
+img {
+  height: 50vh;
+  width: 100vw ;
+}
+h1 {
+  display:flex;
+  justify-content: center;
+  font-size: 2em;
+  color: var(--for-highlight);
+  text-align: center;
+  padding: 1em;
+}

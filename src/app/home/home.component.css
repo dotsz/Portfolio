@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .container h1 {
+    font-size: medium;
+    padding: 1em;
+    width: 50%;
+  }
+
+  .container img {
+    width: 80% ;
+    margin: 1.5em auto;
+    border-radius: 10px;
+    border: var(--for-header) 1px solid;
+  }
+}

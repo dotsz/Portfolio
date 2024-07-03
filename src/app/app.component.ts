@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { trigger, transition, style, query, group, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -22,11 +23,40 @@ import { RouterModule } from '@angular/router';
         <li><a routerLink="/under-construction"><img src="../assets/connect-100.png" alt="Connect with Me"></a></li>
       </ul>
     </div>
-    <router-outlet></router-outlet>
+    <div [@routeAnimations]="prepareRoute(outlet)" class="router-outlet-container">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
 
   `,
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    trigger('routeAnimations', [
+      transition('* <=> *', [
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            opacity: 0,
+            transform: 'scale(0.8)'
+          })
+        ],{ optional: true }),
+        group([
+          query(':enter', [
+            animate('0.5s ease-in-out', style({ opacity: 1, transform: 'scale(1)' }))
+          ],{ optional: true }),
+          query(':leave', [
+            animate('0.5s ease-in-out', style({ opacity: 0, transform: 'scale(0.8)' }))
+          ],{ optional: true })
+        ])
+      ])
+    ])
+  ]
 })
 export class AppComponent {
   title: string = 'my-portfolio-website';
+  prepareRoute(outlet:any) {
+    return outlet.activatedRouteData['animation'] || 'HomePage';
+  }
 }

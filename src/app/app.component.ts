@@ -35,8 +35,6 @@ import { trigger, transition, style, query, group, animate } from '@angular/anim
         query(':enter, :leave', [
           style({
             position: 'absolute',
-            top: 0,
-            left: 0,
             width: '100%',
             opacity: 0,
             transform: 'scale(0.8)'

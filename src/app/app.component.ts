@@ -44,10 +44,10 @@ import { trigger, transition, style, query, group, animate } from '@angular/anim
         ],{ optional: true }),
         group([
           query(':enter', [
-            animate('0.5s ease-in-out', style({ opacity: 1, transform: 'scale(1)' }))
+            animate('1s ease-in-out', style({ opacity: 1, transform: 'scale(1)' }))
           ],{ optional: true }),
           query(':leave', [
-            animate('0.5s ease-in-out', style({ opacity: 0, transform: 'scale(0.8)' }))
+            animate('1s ease-in-out', style({ opacity: 0, transform: 'scale(0.8)' }))
           ],{ optional: true })
         ])
       ])

@@ -1,40 +1,21 @@
-.mobile-header{
-  display: none;
+.home-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 5vh;
+  margin-bottom: 20vh;
 }
 
-.container  {
-  height: 80vh;
-}
-.container img {
-  border-radius: 5px;
-  padding: 0;
-  box-shadow: 10px 5px 5px rgba(142, 142, 140, 0.2);
-  width: 250px;
+.homePhoto, .homeIntro{
+  max-width: 350px;
+
 }
 
-.container h1 {
-  font-size: 1rem;
-  padding: 1.5rem;
+.homeIntro{
+  font-size: 0.8em;
+  padding-top: 1em;
 }
-
-
-  @media (max-width: 768px) {
-    .container {
-      display:flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .mobile-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-
-      font-size: max(1.5rem, 2.5vw);
-
-    }
-  }
 
 

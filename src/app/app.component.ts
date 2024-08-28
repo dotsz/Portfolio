@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {RouterModule, RouterOutlet} from '@angular/router';
-import { trigger, transition, style, query, group, animate } from '@angular/animations';
 import {FooterComponent} from "./footer/footer.component";
 
 @Component({
@@ -25,40 +24,16 @@ import {FooterComponent} from "./footer/footer.component";
           <li><a routerLink="/contact"><img src="../assets/connect-100.png" alt="Connect with Me"></a></li>
         </ul>
       </div>
-      <div [@routeAnimations]="prepareRoute(outlet)" class="router-outlet-container">
-          <router-outlet #outlet="outlet"></router-outlet>
+      <div class="router-outlet-container">
+          <router-outlet></router-outlet>
       </div>
       <app-footer></app-footer>
     </div>
 
   `,
   styleUrls: ['./app.component.css'],
-  animations: [
-    trigger('routeAnimations', [
-      transition('* <=> *', [
-        query(':enter, :leave', [
-          style({
-            position: 'absolute',
-            width: '100%',
-            opacity: 0,
-            transform: 'scale(0.8)'
-          })
-        ],{ optional: true }),
-        group([
-          query(':enter', [
-            animate('0.8s ease-in-out', style({ opacity: 1, transform: 'scale(1)' }))
-          ],{ optional: true }),
-          query(':leave', [
-            animate('0.8s ease-in-out', style({ opacity: 0, transform: 'scale(0.8)' }))
-          ],{ optional: true })
-        ])
-      ])
-    ])
-  ]
+
 })
 export class AppComponent {
   title: string = 'my-portfolio-website';
-  prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
-  }
 }

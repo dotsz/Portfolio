@@ -1,0 +1,21 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.about-me{
+  font-size: 2.5rem;
+  /*border: 2px solid green;*/
+  width: 100%;
+  text-align: center;
+}
+
+.about-image {
+  max-width:400px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}

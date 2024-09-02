@@ -1,4 +1,4 @@
-/* Base Styling*/
+/* Base Styling */
 :root {
   --body-background-color: #07020b;
   --body-background-color2: #1A1A1A;
@@ -15,38 +15,64 @@
   padding: 0;
   margin: 0;
 }
+
 nav li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
   color: var(--for-text);
 }
 
-
 html, body {
-  height: 100vh;
+  overflow-x: hidden;
   width: 100vw;
-  overflow-x:hidden;
+  height: 100vh;
   background-color: var(--body-background-color2);
   color: var(--for-text);
-  font-family: 'Fira Code'  , monospace;
+  font-family: 'Fira Code', monospace;
+  scroll-behavior: smooth;
 }
-
-/* paragraph styling */
 
 .blue {
   color: var(--blue-accent);
 }
+
 .highlight {
   color: var(--for-highlight);
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  bottom: 0;
   padding: 1em;
+  font-size: 0.5rem;
   background-color: var(--for-header);
   color: var(--for-text);
+}
+
+/* Snap Scrolling */
+.content-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  padding: 1.5rem;
+
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+img {
+  max-width: 450px;
+  max-height: 450px;
 }

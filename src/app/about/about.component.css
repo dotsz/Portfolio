@@ -1,22 +1,14 @@
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  margin-top: 5vh;
-  margin-bottom: 20vh;
+img {
+  max-width: 100%;
 }
 
-.about-container1, .about-container2{
-  max-width: 350px;
+ul li {
+  list-style-type: none;
 }
 
-.about-image, .about-intro{
-  max-width: 350px;
-  max-height: 350px;
-  font-size: x-small;
-}
+
+
+
 
 
 

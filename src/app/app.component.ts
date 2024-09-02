@@ -17,51 +17,53 @@ import { NotificationComponent} from "./notification/notification.component";
       <!-- Navigation -->
       <app-notification></app-notification>
       <app-nav></app-nav>
-
-      <div class="waviy">
-        <span style="--i:1">V</span>
-        <span style="--i:2">i</span>
-        <span style="--i:3">c</span>
-        <span style="--i:4">t</span>
-        <span style="--i:5">o</span>
-        <span style="--i:6">r</span>
-        <span style="--i:7">&nbsp;</span>
-        <span style="--i:8">F</span>
-        <span style="--i:9">e</span>
-        <span style="--i:10">l</span>
-        <span style="--i:11">i</span>
-        <span style="--i:12">p</span>
-        <span style="--i:13">e</span>
-        <span style="--i:14">&nbsp;</span>
-        <span style="--i:15">J</span>
-        <span style="--i:16">r</span>
-      </div>
-
-           <!-- Main Content Sections -->
+                 <!-- Main Content Sections -->
       <div class="content-container">
+        <section id="welcomeName">
+          <div class="waviy">
+            <span style="--i:1">V</span>
+            <span style="--i:2">i</span>
+            <span style="--i:3">c</span>
+            <span style="--i:4">t</span>
+            <span style="--i:5">o</span>
+            <span style="--i:6">r</span>
+            <span style="--i:7">&nbsp;</span>
+            <span style="--i:8">F</span>
+            <span style="--i:9">e</span>
+            <span style="--i:10">l</span>
+            <span style="--i:11">i</span>
+            <span style="--i:12">p</span>
+            <span style="--i:13">e</span>
+            <span style="--i:14">&nbsp;</span>
+            <span style="--i:15">J</span>
+            <span style="--i:16">r</span>
+          </div>
+        </section>
+
         <section id="home">
           <app-home></app-home>
         </section>
 
         <section id="about">
-          <app-about></app-about>
+          <div class="parallax-container">
+              <div class="parallax-background"></div>
+              <div class="content">
+                  <app-about></app-about>
+              </div>
+          </div>
         </section>
 
         <section id="portfolio">
 <!--          <app-portfolio></app-portfolio>-->
           <app-under-construction></app-under-construction>
+
+
         </section>
 
         <section id="contact">
 <!--          <app-contact></app-contact>-->
           <app-under-construction></app-under-construction>
         </section>
-      </div>
-
-
-      <!-- Loading Indicator -->
-      <div class="loading-spinner" *ngIf="isLoading">
-        Loading more content...
       </div>
 
       <app-footer></app-footer>

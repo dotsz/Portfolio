@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrls: ['./nav.component.css']
 })
-export class NavComponent {
+export class NavComponent implements AfterViewInit {
 
+  ngAfterViewInit(): void {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    if (hamburger && menu) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        menu.classList.toggle('show');
+      });
+    }
+  }
 }

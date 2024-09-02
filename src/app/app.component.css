@@ -3,16 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust based on your layout */
+  height: 100vh;
 }
 
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 2rem; /* Adjust as needed */
-  color: #fff; /* Adjust as needed */
+  font-size: 2rem;
+  color: #fdb927;
   text-transform: uppercase;
-  animation: flip 2s infinite;
+  animation: flip 3s infinite;
   animation-delay: calc(0.1s * var(--i));
 }
 
@@ -21,3 +21,5 @@
     transform: rotateY(360deg);
   }
 }
+
+

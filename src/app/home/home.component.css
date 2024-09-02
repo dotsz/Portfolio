@@ -1,21 +1,14 @@
-.home-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  margin-top: 5vh;
-  margin-bottom: 20vh;
+@media screen and (min-width: 768px){
+  .home-container {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
 }
 
-.homePhoto, .homeIntro{
-  max-width: 350px;
 
-}
 
-.homeIntro{
-  font-size: 0.8em;
-  padding-top: 1em;
-}
 
 

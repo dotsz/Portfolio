@@ -14,10 +14,9 @@ import { NotificationComponent} from "./notification/notification.component";
   imports: [NotificationComponent, NavComponent, HomeComponent, AboutComponent, PortfolioComponent, ContactComponent, FooterComponent, UnderConstructionComponent],
   template: `
     <div class="app-container">
-      <!-- Navigation -->
+
       <app-notification></app-notification>
       <app-nav></app-nav>
-                 <!-- Main Content Sections -->
       <div class="content-container">
         <section id="welcomeName">
           <div class="waviy">
@@ -43,7 +42,6 @@ import { NotificationComponent} from "./notification/notification.component";
         <section id="home">
           <app-home></app-home>
         </section>
-
         <section id="about">
           <div class="parallax-container">
               <div class="parallax-background"></div>
@@ -52,20 +50,13 @@ import { NotificationComponent} from "./notification/notification.component";
               </div>
           </div>
         </section>
-
         <section id="portfolio">
-<!--          <app-portfolio></app-portfolio>-->
-          <app-under-construction></app-under-construction>
-
-
+          <app-portfolio></app-portfolio>
         </section>
-
         <section id="contact">
-<!--          <app-contact></app-contact>-->
-          <app-under-construction></app-under-construction>
+          <app-contact></app-contact>
         </section>
       </div>
-
       <app-footer></app-footer>
     </div>
   `,
